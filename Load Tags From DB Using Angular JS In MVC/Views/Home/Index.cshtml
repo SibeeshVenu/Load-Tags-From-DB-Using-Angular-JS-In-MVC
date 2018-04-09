@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Load Tags From DB Using Angular JS In MVC Web API";
+}
+
+<h2>Load Tags From DB Using Angular JS In MVC Web API </h2>
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/jquery.tagit.css" rel="stylesheet" />
+<style>
+    #tags {
+        width: 25%;
+    }
+
+    #error {
+        display:none;
+        font-weight: bold;
+        color: #1c94c4;
+        font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+        font-size: 1.1em;
+    }
+</style>
+<div ng-app="tagApp">
+    <div ng-controller="tagController">
+        <ul id="tags"></ul>
+        <div id="error">Nothing found!</div>
+    </div>
+</div>

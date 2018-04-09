@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TrialsDBModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="tblTags">
+      <EntityTypeMapping TypeName="TrialsDBModel.tblTag">
+        <MappingFragment StoreEntitySet="tblTags">
+          <ScalarProperty Name="tagId" ColumnName="tagId" />
+          <ScalarProperty Name="tagName" ColumnName="tagName" />
+          <ScalarProperty Name="tagDescription" ColumnName="tagDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="getTags" FunctionName="TrialsDBModel.Store.getTags" />
+  </EntityContainerMapping>
+</Mapping>
